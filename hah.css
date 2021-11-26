@@ -1,0 +1,36 @@
+body{
+    background-color: grey;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a {
+    text-decoration: none;
+    color:white;
+}
+ul {
+    background: orange;
+}
+li {
+    background: orange;
+    padding:1rem;
+    float:left;
+    display: block;
+    position: relative;
+}
+li:hover{
+  background:lightgray ;
+}
+ul li ul{
+ visibility: hidden;
+ position: absolute;
+ left:0;
+ margin-top: 1rem;
+}
+ul li:hover > ul,
+ul li ul:hover {
+    visibility: visible;
+   display: block;
+}
+ul li ul li{
+    width: 100%;
+}
